@@ -99,11 +99,12 @@ ORM 서비스
 
 -tip) Django는 디폴트로 모든 Django 모델 클라스에 대해 object라는 Manager 객체를 자동 추가 (데이터를 읽어오기 위해서 사용) —> 모델 클라스_이름.objects
 <br/>
+<br/>
+
 
 Selected related
 
 - SQL 문의 JOIN을 사용하여 Query set을 가져올 때, 미리 related object까지 불러오는 함수 (DB 접근 빈도를 낮춰줍니다)
-<br/>
 <br/>
 
 Prefetch related
