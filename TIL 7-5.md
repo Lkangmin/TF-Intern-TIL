@@ -5,16 +5,19 @@
 - pipenv shell
 - python [manage.py](http://manage.py) runserver —> api 찾은 후 test
 
+
 디버깅
 
 - bug&play  아이콘 클릭 → 초록색 play 아이콘 실행
 - 원하는 포인트에 break point를 설정하고 테스트를 해보자!
 - F10 → 한줄씩 디버깅
 
+
 Test 방법
 
 - python [manage.py](http://manage.py) test app 이름/tests.py
 - app 이름.class 이름.method 이름
+
 
 스테이징 서버 (staging server)
 
