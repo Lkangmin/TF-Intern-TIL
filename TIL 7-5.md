@@ -3,8 +3,8 @@
 가상환경 (test 하기)
 
 - pipenv shell
-- python [manage.py](http://manage.py) runserver —> api 찾은 후 test. 
-
+- python [manage.py](http://manage.py) runserver —> api 찾은 후 test
+<br/>
 
 디버깅
 
