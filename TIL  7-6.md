@@ -6,6 +6,8 @@ Serializer
 
 —> 이러한 목적으로  Django REST framework가 제공하는 class가 Serializer
 <br/>
+<br/>
+
 
 SerializerMethodField
 
