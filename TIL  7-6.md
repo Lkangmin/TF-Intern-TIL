@@ -5,20 +5,24 @@ Serializer
 - django 어플리케이션은 API를 요청한 어플리케이션과 JSON 데이터를 주고 받을 수 있어야 합니다. 이를 위해서 DB 인스턴스를  JSON 데이터로 Serializer하거나, 반대로 JSON 데이터를 DB 인스턴스로 다시 Serializer할 수 있어야 합니다.
 
 —> 이러한 목적으로  Django REST framework가 제공하는 class가 Serializer
+<br/>
 
 SerializerMethodField
 
 - 모델에 없는 필드를 추가하고 싶거나 모델에 있는 값을 변형해서 새로운 필드의 값으로 넣고 싶을 때 사용
+<br/>
 
 RequestFactory class
 
 - 테스트 클라이언트와 동일한 API를 공유합니다. 테스트 클라이언트 API의 약간 제한된 하위 집합입니다.
 
 —> APIRequestFactory : 기존 class 확장
+<br/>
 
  force_authenticate()
 
 - 강제 요청, RequestFactory를 사용하여 직접 뷰를 테스트할 때는 인증자격 증명을 작성하지 않고 직접 자격요청을 인증하는 것이 편리합니다.
+<br/>
 
 URL Reverse
 
@@ -29,6 +33,7 @@ URL Reverse
 —> URL이 변경되어도, URL Reverse가 변경된 URL을 추적합니다.
 
 —> [urls.py](http://urls.py)에서 정의한 url pattern의 name만 알고 있다면 view 함수를 통해 매칭되는 url을 찾아 이를 전달받을 수 있습니다.
+<br/>
 
 ORM 서비스
 
@@ -86,16 +91,20 @@ ORM 서비스
 - delete()
 
     데이터를 삭제하기 위해서 먼저 삭제할 row 객체를 얻은 후 delete() 호출
+<br/>
 
 Selected related
 
 - SQL 문의 JOIN을 사용하여 Query set을 가져올 때, 미리 related object까지 불러오는 함수 (DB 접근 빈도를 낮춰줍니다)
+<br/>
 
 Prefetch related
 
 - Selected related와 같이 data를 cache에 저장하며, 모든 relationships가 가능
 
       (many to many 관계를 대상으로 참조할 때 사용 권장)
+<br/>
+
 
 import F
 
