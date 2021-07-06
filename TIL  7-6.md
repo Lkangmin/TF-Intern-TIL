@@ -38,6 +38,8 @@ URL Reverse
 
 —> [urls.py](http://urls.py)에서 정의한 url pattern의 name만 알고 있다면 view 함수를 통해 매칭되는 url을 찾아 이를 전달받을 수 있습니다.
 <br/>
+<br/>
+
 
 ORM 서비스
 
@@ -51,8 +53,6 @@ ORM 서비스
     Fb.save()
 
     —> SQL의 INSERT가 생성되고 실행되어 테이블에 데이터가 추가됩니다.
-
--tip) Django는 디폴트로 모든 Django 모델 클라스에 대해 object라는 Manager 객체를 자동 추가 (데이터를 읽어오기 위해서 사용) —> 모델 클라스_이름.objects
 
 - all()
 
@@ -95,6 +95,9 @@ ORM 서비스
 - delete()
 
     데이터를 삭제하기 위해서 먼저 삭제할 row 객체를 얻은 후 delete() 호출
+    
+
+-tip) Django는 디폴트로 모든 Django 모델 클라스에 대해 object라는 Manager 객체를 자동 추가 (데이터를 읽어오기 위해서 사용) —> 모델 클라스_이름.objects
 <br/>
 
 Selected related
