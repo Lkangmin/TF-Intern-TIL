@@ -2,10 +2,7 @@
 
 Serializer
 
-- django 어플리케이션은 API를 요청한 어플리케이션과 JSON 데이터를 주고 받을 수 있어야 합니다. 이를 위해서 DB 인스턴스를  JSON 데이터로 Serializer하거나, 반대로 JSON 데이터를 DB 인스턴스로 다시 
-<br/>
-
-Serializer할 수 있어야 합니다.
+- django 어플리케이션은 API를 요청한 어플리케이션과 JSON 데이터를 주고 받을 수 있어야 합니다. 이를 위해서 DB 인스턴스를  JSON 데이터로 Serializer하거나, 반대로 JSON 데이터를 DB 인스턴스로 다시 Serializer할 수 있어야 합니다.
 
 —> 이러한 목적으로  Django REST framework가 제공하는 class가 Serializer
 <br/>
