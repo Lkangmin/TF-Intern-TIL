@@ -21,7 +21,7 @@ RequestFactory class
 —> APIRequestFactory : 기존 class 확장
 <br/>
 
- force_authenticate()
+force_authenticate()
 
 - 강제 요청, RequestFactory를 사용하여 직접 뷰를 테스트할 때는 인증자격 증명을 작성하지 않고 직접 자격요청을 인증하는 것이 편리합니다.
 <br/>
