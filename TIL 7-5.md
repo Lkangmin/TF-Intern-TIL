@@ -6,6 +6,7 @@
 - python [manage.py](http://manage.py) runserver —> api 찾은 후 test
 
 
+
 디버깅
 
 - bug&play  아이콘 클릭 → 초록색 play 아이콘 실행
