@@ -54,45 +54,45 @@ ORM 서비스
 
     —> SQL의 INSERT가 생성되고 실행되어 테이블에 데이터가 추가됩니다.
 
-- all()
+- objects.all()
 
     테이블 데이터를 전부 가져오기 위해서 사용
 
-- get()
+- objects.get()
 
     하나의 row만을 가져오기 위해서 사용
 
-- filter()
+- objects.filter()
 
     특정 조건에 맞는 row들을 가져오기 위해서 사용    ex) filter( name = 'Kim' )
 
-- exclude()
+- objects.exclude()
 
     특정 조건을 제외한 나머지 row들을 가져오기 위해서 사용
 
-- count()
+- objects.count()
 
     데이터의 개수 (row 수)를 세기 위해서 사용
 
-- order_by()
+- objects.order_by()
 
     데이터를 키에 따라 정렬하기 위해서 사용, 앞에 -가 붙으면 내림차순
 
     ex) order_by( 'id', '-createData' )  → id을 기준으로 올림차순, createData를 기준으로 내림차순으로 정렬
 
-- distinct
+- objects.distinct
 
     중복된 값은 하나로만 표시하기 위해 사용
 
-- first()
+- objects.order_by('name').first()
 
     데이터들 중 처음에 있는 row만을 리턴
 
-- last()
+- objects.order_by('name').last()
 
     데이터들 중 마지막에 있는 row만을 리턴  ( order_by 후에 하면, 해당 필드 정렬했을 때 마지막 row 리턴)
 
-- delete()
+- objects.delete()
 
     데이터를 삭제하기 위해서 먼저 삭제할 row 객체를 얻은 후 delete() 호출
     
