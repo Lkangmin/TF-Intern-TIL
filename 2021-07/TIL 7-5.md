@@ -16,7 +16,7 @@
 Test 방법
 
 - python [manage.py](http://manage.py) test app 이름/tests.py
-- app 이름.class 이름.method 이름
+- app 이름.tests.class 이름.method 이름
 <br/>
 
 스테이징 서버 (staging server)
