@@ -15,7 +15,7 @@ SerializerMethodField
 - 모델에 없는 필드를 추가하고 싶거나 모델에 있는 값을 변형해서 새로운 필드의 값으로 넣고 싶을 때 사용
 - 인자로는 method_name으로 해당 필드값에 대해 정의하는 함수의 이름을 넘겨줍니다.
 - 지정해주지 않을 경우 default로 get_<field_name>으로 지정해줄 수 있습니다.
- (이 때, get_필드명 의 obj —> class meta에 지정한 모델의 객체이다. (직렬화되는 객체))
+ <br/>(이 때, get_필드명 의 obj —> class meta에 지정한 모델의 객체이다. (직렬화되는 객체))
 - https://velog.io/@oen/SerializerMethodField-%EA%B3%B5%EC%8B%9D%EB%AC%B8%EC%84%9C-%EB%B2%88%EC%97%AD 
 <br/><br/>
 
