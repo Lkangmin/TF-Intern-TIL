@@ -1,11 +1,22 @@
 # TIL 7.7
 
-Prefetch()
+prefetch_related
 
+- select_related, prefetch_related —> 하나의 Queryset을 가져올 때, 미리 관련된 object들까지 모두 다 불러와주는 함수이다.
 - ORM JOIN을 하고 싶을 때 N:1 , N:N 의 관계일 경우 prefetched_related()를 사용합니다.
+-> 역참조일때는 prefetch_related를 사용한다! (그래서 DB hit 두번!)
 - selected_related와 달리 prefetch_related는 SQL의 JOIN을 실행하지 않고, python에서 joining을 실행
-- prefetch() 객체는 prefetch_related()를 컨트롤할 때 사용한다. (lookup, queryset=None, to_attr=None)
+- Prefetch() 객체는 prefetch_related()를 컨트롤할 때 사용한다. (lookup, queryset=None, to_attr=None)
 - ex) prefetch_related( 'allergy' ).filter( name = '아이스' ) → allergy table을 일단 캐시데이터로 가져와 저장, 이름이 아이스인 객체를 가져옴
+<br/><br/>
+
+
+Prefetch 객체 사용법
+![Pasted Graphic 1](https://user-images.githubusercontent.com/31716984/144387888-f213ef03-a8d0-4537-9236-1463c1e60037.png)<br/>
+- lookup 설정 :  같이 가져오려는 테이블 (보통 역참조 관계를 가져오므로 테이블명_set)
+- queryset 설정 : 관련 테이블에서 가져오려는 쿼리셋 설정
+- to_attr 설정 : to_attr 인수를 이용해 prefetch에 독자적인 속성을 부여 가능 (class내에 새로운 변수로 설정)
+- https://docs.djangoproject.com/en/3.2/ref/models/querysets/#django.db.models.Prefetch
 <br/><br/>
 
 
