@@ -130,9 +130,9 @@ F 객체
 - F() 객체는 모델의 필드 혹은 annotate된 열의 값을 나타낸다. 실제로 데이터베이스에서 python 메모리로 가져오지 않고, 모델 필드 값을 참조하고 이를 데이터베이스에서 사용하여 작업할 수 있다.
 —> 즉, F() 를 사용하면 그 연산에 해당하는 쿼리를 만들어내는 것이다.
 
-<간단한 예시>
-![Pasted Graphic 12](https://user-images.githubusercontent.com/31716984/144386758-f433e58f-4dcc-4764-908e-0033c44b152b.png)
-![from django db models import](https://user-images.githubusercontent.com/31716984/144386803-663c3baa-5c41-4ed8-911c-77d37481f7a3.png)
+<간단한 예시><br/>
+![Pasted Graphic 12](https://user-images.githubusercontent.com/31716984/144386758-f433e58f-4dcc-4764-908e-0033c44b152b.png)<br/>
+![from django db models import](https://user-images.githubusercontent.com/31716984/144386803-663c3baa-5c41-4ed8-911c-77d37481f7a3.png)<br/>
 - 동일한 기능을 한다.
 - https://docs.djangoproject.com/en/3.2/ref/models/expressions/#f-expressions 
 - https://blog.myungseokang.dev/posts/django-f-class/ 
