@@ -11,7 +11,7 @@ prefetch_related
 <br/><br/>
 
 
-Prefetch 객체 사용법<br/>
+Prefetch 객체 사용법<br/><br/>
 ![Pasted Graphic 1](https://user-images.githubusercontent.com/31716984/144387888-f213ef03-a8d0-4537-9236-1463c1e60037.png)<br/>
 - lookup 설정 :  같이 가져오려는 테이블 (보통 역참조 관계를 가져오므로 테이블명_set)
 - queryset 설정 : 관련 테이블에서 가져오려는 쿼리셋 설정
