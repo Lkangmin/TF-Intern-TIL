@@ -5,8 +5,8 @@ Serializer
 - django 어플리케이션은 API를 요청한 어플리케이션과 JSON 데이터를 주고 받을 수 있어야 합니다. 이를 위해서 DB 인스턴스를  JSON 데이터로 Serializer하거나, 반대로 JSON 데이터를 DB 인스턴스로 다시 Serializer할 수 있어야 합니다.
 
 —> 이러한 목적으로  Django REST framework가 제공하는 class가 Serializer
-<br/>
-<br/>
+
+<br/><br/>
 
 
 SerializerMethodField
@@ -17,6 +17,7 @@ SerializerMethodField
 - 지정해주지 않을 경우 default로 get_<field_name>으로 지정해줄 수 있습니다.
  <br/>(이 때, get_필드명 의 obj —> class meta에 지정한 모델의 객체이다. (직렬화되는 객체))
 - https://velog.io/@oen/SerializerMethodField-%EA%B3%B5%EC%8B%9D%EB%AC%B8%EC%84%9C-%EB%B2%88%EC%97%AD 
+
 <br/><br/>
 
 RequestFactory class
@@ -24,14 +25,15 @@ RequestFactory class
 - 테스트 클라이언트와 동일한 API를 공유합니다. 테스트 클라이언트 API의 약간 제한된 하위 집합입니다.
 
 —> APIRequestFactory : 기존 class 확장
-<br/>
-<br/>
+
+<br/><br/>
 
 
 force_authenticate()
 
 - 강제 요청, RequestFactory를 사용하여 직접 뷰를 테스트할 때는 인증자격 증명을 작성하지 않고 직접 자격요청을 인증하는 것이 편리합니다.
-<br/>
+
+<br/><br/>
 
 URL Reverse
 
@@ -42,8 +44,8 @@ URL Reverse
 —> URL이 변경되어도, URL Reverse가 변경된 URL을 추적합니다.
 
 —> urls.py에서 정의한 url pattern의 name만 알고 있다면 view 함수를 통해 매칭되는 url을 찾아 이를 전달받을 수 있습니다.
-<br/>
-<br/>
+
+<br/><br/>
 
 
 ORM 서비스
@@ -103,13 +105,14 @@ ORM 서비스
     
 
 tip) Django는 디폴트로 모든 Django 모델 클라스에 대해 object라는 Manager 객체를 자동 추가 (데이터를 읽어오기 위해서 사용) —> 모델 클라스_이름.objects
-<br/>
-<br/>
+
+<br/><br/>
 
 
 Selected related
 
 - SQL 문의 JOIN을 사용하여 Query set을 가져올 때, 미리 related object까지 불러오는 함수 (DB 접근 빈도를 낮춰줍니다)
+
 <br/><br/>
 
 Prefetch related
@@ -117,12 +120,13 @@ Prefetch related
 - Selected related와 같이 data를 cache에 저장하며, 모든 relationships가 가능
 
       (many to many 관계를 대상으로 참조할 때 사용 권장)
-<br/><br/>
 
+<br/><br/>
 
 import F
 
 - F(name) → F() 객체는 모델 필드의 값을 나타냅니다. 데이터베이스에서 파이썬 메모리로 데이터를 가져오지 않고 모델 필드 값을 참조하고 사용하여 데이터베이스 작업을 수행할 수 있습니다. 대신  Django는 F() 객체를 사용하여 데이터베이스 수준에서 필요한 작업을 설명하는 SQL 표현식을 생성합니다.
+
 <br/><br/>
 
 
@@ -130,9 +134,12 @@ F 객체
 - F() 객체는 모델의 필드 혹은 annotate된 열의 값을 나타낸다. 실제로 데이터베이스에서 python 메모리로 가져오지 않고, 모델 필드 값을 참조하고 이를 데이터베이스에서 사용하여 작업할 수 있다.
 —> 즉, F() 를 사용하면 그 연산에 해당하는 쿼리를 만들어내는 것이다.
 
-<간단한 예시><br/>
-![Pasted Graphic 12](https://user-images.githubusercontent.com/31716984/144386758-f433e58f-4dcc-4764-908e-0033c44b152b.png)<br/>
-![from django db models import](https://user-images.githubusercontent.com/31716984/144386803-663c3baa-5c41-4ed8-911c-77d37481f7a3.png)<br/>
+<간단한 예시>
+
+![Pasted Graphic 12](https://user-images.githubusercontent.com/31716984/144386758-f433e58f-4dcc-4764-908e-0033c44b152b.png)
+
+![from django db models import](https://user-images.githubusercontent.com/31716984/144386803-663c3baa-5c41-4ed8-911c-77d37481f7a3.png)
+
 - 동일한 기능을 한다.
 - https://docs.djangoproject.com/en/3.2/ref/models/expressions/#f-expressions 
 - https://blog.myungseokang.dev/posts/django-f-class/ 
